@@ -1,0 +1,23 @@
+extends layouts/layout
+
+block headContent
+    title Users
+    script(src="../functions.js")
+block bodyContent
+    table Users
+        tr
+            th User Id
+            th Name
+            th Age
+            th Email
+        each user in users
+            tr
+                th #{user.userId}
+                th #{user.name}
+                th #{user.age}
+                th #{user.email}
+                th
+                    form(method='GET', action=`/edit/${+user.number}`)
+                        input(type='submit', value="Edit")
+                    form(method='GET', action=`/users/${+user.number}`)
+                        input(type='submit', value='Delete')

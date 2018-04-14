@@ -1,0 +1,15 @@
+form(method='post', action=`/newUser/${+user.number}`)
+    div
+        label(for='userId') User Id
+        input(id='userId', name='userId', value=user.userId)
+    div
+        label(for='name') Name
+        input(id='name', name='name', value=user.name)
+    div
+        label(for='age') Age
+        input(id='age', name='age', type='number', value=user.age)
+    div
+        label(for='email') Email
+        input(id='email', name='email', value=user.email)
+    div
+        input(type='submit', value='Add User')
