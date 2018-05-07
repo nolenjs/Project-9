@@ -1,7 +1,6 @@
 {
-  "name": "ManagerApp",
+  "name": "managerapp",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +11,8 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
+    "mongodb": "^3.0.7",
+    "mongoose": "^5.0.16",
     "pug": "^2.0.3"
   },
   "devDependencies": {
@@ -19,5 +20,14 @@
     "karma": "^2.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^1.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nolenjs/Project-8.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nolenjs/Project-8/issues"
+  },
+  "homepage": "https://github.com/nolenjs/Project-8#readme",
+  "description": ""
 }

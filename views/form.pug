@@ -1,15 +1,20 @@
-form(method='post', action='/users')
-    div
-        label(for='userId') User Id
-        input(id='userId' name='userId')
-    div
-        label(for='name') Name
-        input(id='name', name='name')
-    div
-        label(for='age') Age
-        input(id='age', name='age', type='number')
-    div
-        label(for='email') Email
-        input(id='email', name='email')
-    div
-        input(type='submit', value='Add User')
+extends layouts/layout
+
+block headContent
+    title Users
+block bodyContent
+    form(method='post', action='/users')
+        div
+            label(for='userId') User Id
+            input(id='userId' name='userId')
+        div
+            label(for='name') Name
+            input(id='name', name='name')
+        div
+            label(for='age') Age
+            input(id='age', name='age', type='number')
+        div
+            label(for='email') Email
+            input(id='email', name='email')
+        div
+            input(type='submit', value='Add User')
